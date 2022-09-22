@@ -1,0 +1,116 @@
+@media only screen and (max-width: 768px) {
+    #menu_button {
+        display: inline-block;
+    }
+
+    .menu .nav {
+        position: absolute;
+        top: 8.95%;
+        right: 20px;
+        width: 100px;
+        background: #fff;
+        transition: all .3s linear;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 99;
+    }
+
+    .menu .nav.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu .nav ul {
+        flex-direction: column;
+        gap: 0 !important;
+    }
+
+    .menu .nav ul li a {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .menu .nav ul li a:hover {
+        background: gold;
+    }
+
+
+
+
+
+
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+    .right_banner-section{
+        display: none;
+    }
+
+    .left_banner-section{
+
+        flex-basis: 100%;
+        text-align: center;
+
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .signup .text{
+        display: none;
+    }
+    .signup .icon {
+        display: block;
+    }
+
+
+    .services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footer .widget-2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+}
+@media only screen and (max-width: 320px){
+    .widget-1 img{
+        width: 250px;
+    }
+    .products{
+        width: 250px;
+    }
+    .menu .logo img{
+        width: 100px;
+    }
+  
